@@ -1,0 +1,582 @@
+
+.section__coteg{
+    padding: 180px 0px 100px 0px;
+
+    @media (max-width: $breakpoint992) {
+        padding: 70px 0px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding: 60px 0px;
+    }
+
+
+    & .coteg{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media (max-width: $breakpoint992) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 100px;
+        }
+
+        &__line{
+            height: 10px;
+            width: 100%;
+            background: linear-gradient(269.6deg, #BEFF6C -10.47%, #70FBC1 99.83%);
+            margin-top: 150px;
+
+             
+            @media (max-width: $breakpoint992) {
+                margin-top: 70px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                margin-top: 50px;
+            }
+        }
+
+        &__item{
+
+            &-title{
+                font-family: 'Hyperspace Race Expanded';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 109.5%;
+                letter-spacing: 0.005em;
+                text-transform: uppercase;
+                color: #1C1C1C;
+                transform:scale(1,0.8);
+
+                @media (max-width: $breakpoint480) {
+                    
+                    font-size: 35px;
+                 }
+            }
+
+            &-subtitle{
+                font-family: 'Hyperspace Race Expanded';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 109.5%;
+                letter-spacing: 0.005em;
+                text-transform: uppercase;
+                color: #1C1C1C;
+                transform:scale(1,0.8);
+                max-width: 370px;
+                background-position: -30px;
+
+                background-image: url('../img/coteg__img.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                
+                @media (max-width: $breakpoint480) {
+                    
+                    font-size: 35px;
+                 }
+            }
+
+            &-text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                color: #4A4A4A;
+                margin: 40px 0px;
+                max-width: 550px;
+
+                @media (max-width: $breakpoint480) {
+                    
+                    font-size: 18px;
+                    margin: 30px 0px;
+                 }
+
+            }
+
+            &-button{
+                width: 238px;
+                height: 41px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 11px;
+                background-color: #00000000;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.005em;
+                color: #000000;        
+                border: 1px solid #000000;
+                position: relative;
+            
+
+
+                & .border{
+                    position: absolute;
+                    border: 1px solid #9EC53B;
+                    width: 238px;
+                    height: 41px;
+                    transition: all ease .3s;
+                    left: -6px;
+                    top: 6px;
+                    
+                }
+                
+                & .line{
+                    transition: all ease .3s;
+                }
+
+                &:hover{
+                    & .line{
+                        transform: translateX(11px);
+                    }
+
+                    & .border{
+                        position: absolute;
+                        border: 1px solid #9EC53B;
+                        width: 238px;
+                        height: 41px;
+    
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                }
+            }
+
+        }
+
+        &__item2{
+            max-width: 540px;
+            width: 100%;
+            height: 330px;
+            background: #424242;
+
+            display: flex;
+            justify-content: flex-end;
+
+            @media (max-width: $breakpoint992) {
+               max-width: 100%;
+               display: flex;
+               justify-content: flex-end;
+            }
+
+            @media (max-width: $breakpoint768) {
+                height: 250px;
+             }
+
+            &-img{
+                transform: translateY(-110px);
+                height: 560px;
+
+                @media (max-width: $breakpoint768) {
+                    height: 400px;
+                 }
+
+                 @media (max-width: $breakpoint480) {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    min-height: 350px;
+                    transform: translateY(-60px);
+
+                 }
+
+            }
+        }
+
+    }
+
+}
+
+.section__some{
+
+    & .some{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 60px;
+
+        @media (max-width: $breakpoint1200) {
+            gap: 30px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            flex-direction: column;
+        }
+
+        &__item{
+            background-image: url('../img/pley__video.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            width: 100%;
+            min-height: 345px;
+            position: relative;
+            display: contents;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: all ease .3s;
+
+            @media (max-width: $breakpoint992) {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                background-position: center;
+            }
+
+
+            &:hover{
+           
+                & .some__item-pley{
+                    background: rgba(0, 0, 0, 0.883);
+                }
+
+            }
+
+
+            &-pley{
+                position: absolute;
+                width: 91px;
+                height: 91px;
+                background: rgba(0, 0, 0, 0.63);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: all ease .3s;
+
+                @media (max-width: $breakpoint992) {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                & img{
+                    @media (max-width: $breakpoint992) {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+            }
+
+        }
+
+        &__info{
+            max-width: 100%;
+            width: 100%;
+
+            &-title{
+                transform:scale(1,0.8);
+                font-family: 'Hyperspace Race Expanded';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 109.5%;   
+                letter-spacing: 0.005em;
+                text-transform: uppercase;    
+                color: #1C1C1C;     
+                
+                @media (max-width: $breakpoint480) {
+                    font-size: 35px;
+                }
+            }
+
+            &-subtitle{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.005em;
+                color: #000000;
+                margin: 35px 0px;
+                max-width: 555px;
+
+                @media (max-width: $breakpoint480) {
+                    margin: 20px 0px;
+                    font-size: 17px;
+                }
+            }
+
+            &-ul{
+                display: flex;
+                flex-direction: column;
+
+                &-li{
+                    display: flex;
+                    align-items: center;
+                    gap: 17px;
+                    margin-bottom: 5px;
+
+                    &-box{
+                        width: 10px;
+                        height: 10px;  
+                        background: #76FCBC;
+                        border-radius: 100%;
+                    }
+
+                    &-text{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: 0.005em;
+                        color: #000000;                        
+                    }
+                }
+
+            }
+
+        }
+
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+            gap: 12px;
+
+            & img{
+                transition: all ease .3s;
+            }
+
+            &:hover{
+
+                & img{
+                    transform: translateX(20px);
+                }
+
+            }
+
+            &-text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.005em;  
+                color: #030303;
+            }
+
+            
+        }
+
+    }
+
+}
+
+.section__product{
+    padding: 50px 0px 100px 0px;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint1200) {
+        padding: 100px 0px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        padding: 40px 0px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding: 0px 0px 70px 0px;
+    }
+
+
+
+    & .swiper__product{
+        height: 440px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $breakpoint1200) {
+            height: 370px;
+        }
+
+
+
+    }
+
+    & .swiper-slide-active{
+
+        & .products__center-item1-img1{
+            transition: all ease .6s;
+            transform: scale(1.4);
+
+            
+        @media (max-width: $breakpoint768) {
+            transform: scale(1.2);
+
+        }
+
+        }
+
+        & .products__center-item2-img2{
+            transition: all ease .6s;
+            transform: scale(1.2);
+
+        }
+
+        & .products__center-item1-img{
+            transition: all ease .6s;
+            transform: scale(1.2);
+            transform: rotate(-20deg);
+
+
+            @media (max-width: $breakpoint768) {
+                transform: scale(1.1);
+                transform: rotate(-20deg);
+            }
+
+
+        }
+
+    }
+
+    & .swiper-wrapper2{
+        height: 50% !important;
+    }
+
+    & .swiper-slide{
+        cursor: grabbing;
+    }
+
+
+}
+
+.section__review{
+    padding-bottom:100px ;
+
+    @media (max-width: $breakpoint992) {
+        padding-bottom: 50px;
+    }
+
+    & .swiper__review{
+        padding: 50px 0px;
+
+        @media (max-width: $breakpoint992) {
+            padding: 50px 0px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            padding: 30px 0px 10px 0px;
+        }
+
+    }
+
+    & .review{
+          
+
+
+        &__title{
+            font-family: 'Hyperspace Race Expanded';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 109.5%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #1C1C1C;
+            transform:scale(1,0.8);   
+            
+            @media (max-width: $breakpoint480) {
+                font-size: 35px;
+            }
+            
+        }
+
+        &__button{
+            padding: 12px 0px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+            background: #1E1E1E;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.005em;
+            
+            color: #FFFFFF;
+
+            & img{
+                transition: all ease .3s;
+            }
+
+            &:hover{
+                & img{
+                    transform: translateX(21px);
+                }
+            }
+
+            @media (max-width: $breakpoint480) {
+                margin-top: 20px;
+             }
+            
+        }
+
+    }
+
+}
+
+.section__meybi{
+    padding-bottom: 85px ;
+
+    @media (max-width: $breakpoint480) {
+        padding-bottom: 50px;
+     }
+
+     & .swiper-wrapper3{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 70px;
+        padding-bottom: 10px;
+
+
+     }
+
+    & .meybi{
+        &__title{
+            font-family: 'Hyperspace Race Expanded';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 109.5%;
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #1C1C1C;   
+            
+            @media (max-width: $breakpoint480) {
+                font-size: 30px;
+             }
+        }
+
+
+
+
+    }
+
+}
